@@ -71,7 +71,7 @@ app.use(helmet.frameguard({ action: 'deny'}))
 
 // Use `helmet.xssFilter()`
 
-
+app.use(helmet.xssFilter())
 
 /** 5) Avoid inferring the response MIME type - `helmet.noSniff()` */
 
