@@ -13,7 +13,7 @@ var app = express();              // Do Not Edit
 
 /** 1) Install and require `helmet` */
 
-require('helmet');
+const helmet = require('helmet')
 
 // [Helmet](https://github.com/helmetjs/helmet) helps you secure your
 // Express apps by setting various HTTP headers.
@@ -33,7 +33,7 @@ require('helmet');
 
 // Use `helmet.hidePoweredBy()``
 
-
+app.use(helmet.hidePoweredBy())
 
 /** 3) Mitigate the risk of clickjacking - `helmet.frameguard()` */
 
